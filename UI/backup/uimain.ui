@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1375</width>
+    <height>690</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Boîte de réparation</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../qrc_sources/source.qrc">
+    <normaloff>:/mainIcon/icons/movil_05.jpg</normaloff>:/mainIcon/icons/movil_05.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_11">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="additem">
+       <attribute name="icon">
+        <iconset resource="../qrc_sources/source.qrc">
+         <normaloff>:/additem/icons/blog.png</normaloff>:/additem/icons/blog.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Ajouter des articles</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="1">
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="paid">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>Payé :</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_9">
+             <item row="0" column="0">
+              <widget class="QLabel" name="dateText">
+               <property name="text">
+                <string>Date :</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QDateTimeEdit" name="dateTimeEdit">
+               <property name="locale">
+                <locale language="French" country="Tunisia"/>
+               </property>
+               <property name="showGroupSeparator" stdset="0">
+                <bool>false</bool>
+               </property>
+               <property name="minimumDateTime">
+                <datetime>
+                 <hour>0</hour>
+                 <minute>0</minute>
+                 <second>0</second>
+                 <year>2000</year>
+                 <month>1</month>
+                 <day>1</day>
+                </datetime>
+               </property>
+               <property name="currentSection">
+                <enum>QDateTimeEdit::DaySection</enum>
+               </property>
+               <property name="displayFormat">
+                <string>d/M/yyyy h:mm</string>
+               </property>
+               <property name="calendarPopup">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="governorateText">
+               <property name="text">
+                <string>Gouvernorat :</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QComboBox" name="governorate"/>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="delegationText">
+               <property name="text">
+                <string>Délégation :</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QComboBox" name="delegation"/>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_13">
+               <property name="text">
+                <string>Prix : </string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLineEdit" name="price"/>
+             </item>
+             <item row="4" column="2">
+              <widget class="QCheckBox" name="prepaid">
+               <property name="text">
+                <string>Prépayé</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="1">
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_4">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>Note technique :</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_10">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>Observation :</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string>Accessoires Reçus</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QTextEdit" name="textEdit"/>
+             </item>
+             <item row="1" column="1">
+              <widget class="QTextEdit" name="textEdit_2"/>
+             </item>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="pushButton">
+               <property name="text">
+                <string>Enregistrer</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../qrc_sources/source.qrc">
+                 <normaloff>:/save/icons/save.png</normaloff>:/save/icons/save.png</iconset>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="customerOrCompanyInformation">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>Informations client ou entreprise :</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_8">
+             <item row="0" column="0">
+              <widget class="QLabel" name="companyNameText_2">
+               <property name="text">
+                <string>Nom de la société :</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="companyName_2"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="userNameText_2">
+               <property name="text">
+                <string>Nom et prénom du client : </string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="userNameAndLastName_2"/>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="idNumberText_2">
+               <property name="text">
+                <string>Numéro de CIN :</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="idNumber_2"/>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="addressEmailText_2">
+               <property name="text">
+                <string>Address Email :</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLineEdit" name="emailAddress_2"/>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="phoneNumberText_2">
+               <property name="text">
+                <string>Numéro de téléphone :</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLineEdit" name="phoneNumber_2"/>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="homeAddressText_2">
+               <property name="text">
+                <string>Adresse :</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLineEdit" name="homeAddress_2"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="deviceinformation">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>Informations sur l'appareil :</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_7">
+             <item row="3" column="2">
+              <widget class="QComboBox" name="deviceModel"/>
+             </item>
+             <item row="2" column="2">
+              <widget class="QComboBox" name="deviceBrands"/>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="deviceModelText">
+               <property name="text">
+                <string>Model de l'appareil :</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="deviceBrandsText">
+               <property name="text">
+                <string>Marques de l'appareil :</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QComboBox" name="deviceType"/>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="deviceTypeText">
+               <property name="text">
+                <string>Type de l'appareil :</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1375</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../qrc_sources/source.qrc"/>
+ </resources>
+ <connections/>
+</ui>

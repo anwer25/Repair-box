@@ -1,0 +1,38 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>../icons/33513.jpg</file>
+  </qresource>
+  <qresource prefix="Recherche_tab_icon">
+    <file>../icons/search.png</file>
+  </qresource>
+  <qresource prefix="research_button">
+    <file>../icons/research.png</file>
+  </qresource>
+  <qresource prefix="sync">
+    <file>../icons/refresh.png</file>
+  </qresource>
+  <qresource prefix="refresh">
+    <file>../icons/loading.png</file>
+  </qresource>
+  <qresource prefix="state">
+    <file>../icons/yes-or-no.png</file>
+  </qresource>
+  <qresource prefix="delet">
+    <file>../icons/delete.png</file>
+  </qresource>
+  <qresource prefix="printer">
+    <file>../icons/printer.png</file>
+  </qresource>
+  <qresource prefix="save">
+    <file>../icons/save.png</file>
+  </qresource>
+  <qresource prefix="Modifier">
+    <file>../icons/edit.png</file>
+  </qresource>
+  <qresource prefix="additem">
+    <file>../icons/blog.png</file>
+  </qresource>
+  <qresource prefix="mainIcon">
+    <file>../icons/movil_05.jpg</file>
+  </qresource>
+</RCC>

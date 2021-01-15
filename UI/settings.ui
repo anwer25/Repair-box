@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>settings</class>
+ <widget class="QWidget" name="settings">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>690</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>999</width>
+    <height>999</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Parameter</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../qrc_sources/source.qrc">
+    <normaloff>:/mainIcon/icons/movil_05.jpg</normaloff>:/mainIcon/icons/movil_05.jpg</iconset>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>-4</x>
+     <y>-1</y>
+     <width>696</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>999</width>
+     <height>999</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="syncAndDataBase">
+    <attribute name="title">
+     <string>Synchroniser et Base de données</string>
+    </attribute>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="1" column="0">
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="title">
+        <string>Cloud firestore</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_10">
+        <item row="0" column="0">
+         <widget class="QLabel" name="conffilelab">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Fichier de configuration :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="filedisplayplacecloud">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="openconffilelocation_cloud_firestore">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Lieu de fichier ouvert</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="updatetime_cloud">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Mettre à jour chaque (Minit):</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="updatetimercloud">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>20</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>30</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>60</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QCheckBox" name="cloudActivator">
+          <property name="text">
+           <string>Activer</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>Base de données en temps réel  </string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="2" column="0">
+         <widget class="QLabel" name="refrencelabel">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Référence</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="filelocationlabel">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Fichier de configuration :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="urllabe">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>URL de la base de données :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QCheckBox" name="realtimeractivator">
+          <property name="text">
+           <string>Activer</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="updatetimerlabel">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Mettre à jour chaque (Minit):</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="2">
+         <widget class="QLineEdit" name="filedisplayplacerealtime">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" colspan="2">
+         <widget class="QLineEdit" name="refrence">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1" colspan="2">
+         <widget class="QComboBox" name="updatetimer">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>20</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>30</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>60</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QPushButton" name="openfile_realtimeconf">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Lieu de fichier ouvert</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <widget class="QLineEdit" name="urldatabaseplace">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="title">
+        <string>Base De données (local)</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="0" column="0">
+         <widget class="QLabel" name="data_basePlaceLabel">
+          <property name="text">
+           <string>Emplacement de la base de données :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="dataBaseLocaition"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="openDataBase">
+          <property name="text">
+           <string>Ouvrir</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Nom de la table :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="dataBaseTabelName"/>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="printModel">
+    <attribute name="title">
+     <string>Modèle d'impression</string>
+    </attribute>
+    <layout class="QGridLayout" name="gridLayout_9">
+     <item row="0" column="0">
+      <widget class="QTabWidget" name="tabWidget_2">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Tab 1</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <widget class="QGroupBox" name="groupBox_5">
+           <property name="title">
+            <string>Entreprise</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>logo d'entreprise:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1" colspan="2">
+             <widget class="QLineEdit" name="logoPlace"/>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>Largeur du logo:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>Site Web:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="5">
+             <widget class="QLineEdit" name="siteWeb">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QDoubleSpinBox" name="logoWidth"/>
+            </item>
+            <item row="0" column="3">
+             <widget class="QPushButton" name="openLogo">
+              <property name="text">
+               <string>Ouvrir</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>Hauteur du logo:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QDoubleSpinBox" name="logoHeight"/>
+            </item>
+            <item row="1" column="4">
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>Nom de la société:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="5">
+             <widget class="QLineEdit" name="companyName"/>
+            </item>
+            <item row="3" column="5">
+             <widget class="QLineEdit" name="phoneNumber"/>
+            </item>
+            <item row="3" column="4">
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>Numéro de téléphone:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="4">
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>Adresse de la société:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="5">
+             <widget class="QLineEdit" name="companyAdresse"/>
+            </item>
+            <item row="4" column="4">
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>Fax de l'entreprise:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="5">
+             <widget class="QLineEdit" name="companyFax"/>
+            </item>
+            <item row="5" column="4">
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>Email de l'entreprise:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="5">
+             <widget class="QLineEdit" name="companyEmail"/>
+            </item>
+            <item row="3" column="2">
+             <widget class="QComboBox" name="logoUnite">
+              <item>
+               <property name="text">
+                <string>Inches</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Cm</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Mm</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_12">
+              <property name="text">
+               <string>Unité de mesure:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QGroupBox" name="groupBox_6">
+           <property name="title">
+            <string>Modèle</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_13">
+              <property name="text">
+               <string>Largeur de l'image QR :</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QDoubleSpinBox" name="qrWidth"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_14">
+              <property name="text">
+               <string>Hauteur de l'image QR:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QDoubleSpinBox" name="qrHeight"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>Unité de mesure:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QComboBox" name="qrUnit">
+              <item>
+               <property name="text">
+                <string>Inches</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Cm</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Mm</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="0" colspan="2">
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string>enregistrer l'emplacement du fichier :</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLineEdit" name="savePlace"/>
+            </item>
+            <item row="3" column="3">
+             <widget class="QPushButton" name="openSavePlace">
+              <property name="text">
+               <string>Lieu de sauvegarde</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Tab 2</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_7">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>9</y>
+           <width>651</width>
+           <height>261</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Entreprise</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_16">
+            <property name="text">
+             <string>Modèle :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLabel" name="label_23">
+            <property name="text">
+             <string>Fax de l'entreprise code:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QLineEdit" name="companyAdresse_2"/>
+          </item>
+          <item row="5" column="3">
+           <widget class="QLineEdit" name="companyFax_2"/>
+          </item>
+          <item row="0" column="6">
+           <widget class="QPushButton" name="openTemplate">
+            <property name="text">
+             <string>Ouvrir</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="label_20">
+            <property name="text">
+             <string>QR code: </string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="3">
+           <widget class="QLineEdit" name="companyEmail_2"/>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_18">
+            <property name="text">
+             <string>Logo code: </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="siteWeb_2">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLabel" name="label_24">
+            <property name="text">
+             <string>Email de l'entreprise code:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="3">
+           <widget class="QLineEdit" name="phoneNumber_2"/>
+          </item>
+          <item row="2" column="3">
+           <widget class="QLineEdit" name="companyName_2"/>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="label_22">
+            <property name="text">
+             <string>Adresse de la société code:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3" colspan="2">
+           <widget class="QLineEdit" name="templatePlace"/>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLabel" name="label_21">
+            <property name="text">
+             <string>Numéro de téléphone code:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QLabel" name="label_27">
+            <property name="text">
+             <string>Nome de l'entreprise code:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="3">
+           <widget class="QLineEdit" name="companyEmail_3"/>
+          </item>
+          <item row="8" column="3">
+           <widget class="QLineEdit" name="companyEmail_4"/>
+          </item>
+          <item row="8" column="1">
+           <widget class="QLabel" name="label_34">
+            <property name="text">
+             <string>Site Web code :</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_8">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>269</y>
+           <width>650</width>
+           <height>181</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Modèle</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_19">
+            <property name="text">
+             <string>REF code:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="savePlace_3"/>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_35">
+            <property name="text">
+             <string>Modèle d'appareil code :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLineEdit" name="savePlace_12"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_25">
+            <property name="text">
+             <string>Date code:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="savePlace_4"/>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_33">
+            <property name="text">
+             <string>Prix code :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="savePlace_13"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_26">
+            <property name="text">
+             <string>Nom du client code :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="savePlace_5"/>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="label_36">
+            <property name="text">
+             <string>Prépayée code :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QLineEdit" name="savePlace_14"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_29">
+            <property name="text">
+             <string>Numéro client code :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="savePlace_6"/>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLabel" name="label_31">
+            <property name="text">
+             <string>Accessoires code :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QLineEdit" name="savePlace_9"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_28">
+            <property name="text">
+             <string>Type d'appareil code :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="savePlace_7"/>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLabel" name="label_32">
+            <property name="text">
+             <string>Nom de l'entreprise cliente :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="3">
+           <widget class="QLineEdit" name="savePlace_10"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_30">
+            <property name="text">
+             <string>Marques d'appareils code:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="savePlace_8"/>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="cancelbutton">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>530</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Annule</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="savebutton">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>530</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Enregistrer</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../qrc_sources/source.qrc"/>
+ </resources>
+ <connections/>
+</ui>

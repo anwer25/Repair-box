@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "repair-box",
+  "private_key_id": "c70cf7c9c7e5f74bec41f050ef22d522c6d9362b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDg65sCY81Jdq8e\nOUzhNvKNeSiihRq5FuaSzUWWpJxa9LYWWIZK1n9rBIE4xBJ8HkljzusCvaNxBCjz\nI0l4dJhiLy3Skp0BhOXWYpwjdiEhGu1Kg+lHt0SXQ1CqeAsKftCyXTimmNsvq7PQ\nU/W59lJcvYP+bCht/mhnQMP8YP5kL5lwNbLUfDwqD0ajH7zsfrVF9+IudHppG3+Z\n515SsXIeX9eFmrLLZKHxKU59MjEBRbqzumUKizjPv5e4k5oR3/2/IGefu0YfFt19\nzx+GQsmfsug6ezjcG/akWwGmMQdCN0j61ZtBv11YW2EW6HJg8e3n3IsT2s2Db2x+\nBMtjJomNAgMBAAECggEANItN/+GtVmVz1Rl5SJ7TzLGaiNcUDlvXe0GZqW7kuQn0\nlOVS4B5aj3dysb56fAT+S6MN+2quiUs5vs1GT23boIpZh9ko9S8lG2+XfuBMroVy\nHGeTIqYhj73R1TUsjSPhoN2Oy7qnb+xKmldW7z3ocVJzyMbfLg0SOlbiwi2tmF0n\nO00J0K6xQSu0MB7vbScIGnqP1k8sOROidk86Lmiy6z1nHgDB21QZBQLEPQUFFc6w\nF619rXd7PwMYV/kFIELZTYkDSen+SSi+AbIE4U3EKWhbe8bJQHduEDpSRRbAsH7z\nJDLL8l6m1npdoFQdwaMAoeRawTh3XJ32DU5vNhghqQKBgQDwtW9WHBZsxz2jtfib\nJZFvNXx6xdEq7qOLpu+x8F5Zg3u01U5bxahuJMqTZcSsgpK1hj7r/rJdf8OJl9Bn\n1etzNR9ujmsXOaB97pVqnVtFwM4lp7dPYI77B9Fg2Jth8vXI0dKx8pMVFY/udlGe\ng1hqTmoupAqtQ9tTaMtoJnphBQKBgQDvNWjC4X9SrRBxNKyTbEAiNeiqQa6zc8QR\n1IQD/ZVo24/aNr1qtsNy/RovDuVXZti+e/j/nKv+zoJxX5BiWQzF0x90KMFZvr2d\nH1ZsZhHfrGedZ6RWpg5ig1ICslZsgChjSPhXZGgimnvSStDOPkIn4h2a3eyd67Fu\njRVcwdgM6QKBgQDq0FO4MNY/b23WEmJfFxr03bx9GBSgSQQJ6+PQNagUsosvMRar\nt/pC2Gk1uQVPNGFh63/eQCxHwadCxnJrmOeDD8OF2jDmCzVhJClmQ/MR7LAtU5sj\nOBLDGDFMxIFv38+dA/MB3J1W6B3shkfA1mid67jxnt07gQKoL4aeJ0si8QKBgQCe\nRxS+fj6lEeZjQZs/IM1+1XTR0wwpqVv/AEMp8My/ySfyF25WAgBpQZfls1GE94RK\n5fToDV6xByvAoJ8EtC+DZiLV1XG6VD9ai7W/m/oPqiAVQtK2ksHJ5WKKbj5JJLOU\nnl/UU5ej7dwoVWC8Vu2nPjKgml9KTv3kTG3qJkkyoQKBgFUSqAmoJhNahV3A+iPO\nV00u5Oyb/CYQW1dJNL7zx7Rg8YksSY7NT5ehPXGOpDUJUOPcfVdrc10FvhYn4LvX\nH5D2l+Z7ArDnE/lznk3ZdmOAAUacwuSy2olRe/nH3GhOgxvyPSmMYlcYcX7WqfzO\nUsoR6qu3vQeNwlmu9CGyPf5d\n-----END PRIVATE KEY-----\n",
+  "client_email": "repair-box@appspot.gserviceaccount.com",
+  "client_id": "101787559124639671437",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/repair-box%40appspot.gserviceaccount.com"
+}

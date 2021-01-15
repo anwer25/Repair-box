@@ -1,0 +1,7 @@
+# PynSource Version 1.2
+{'type':'meta', 'info1':'Lorem ipsum dolor sit amet, consectetur adipiscing elit is latin. Comments are saved.'}
+{'type':'umlshape', 'id':'controller', 'x':265, 'y':160, 'width':136, 'height':239, 'attrs': 'MainWindow|login|loginss|loginsss|mWindow|register|ui', 'meths': '__init__|show_login|show_main|show_main_register|show_register'}
+{'type':'umlshape', 'id':'MainLogin', 'x':10, 'y':338, 'width':100, 'height':29, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'MainRegister', 'x':522, 'y':10, 'width':130, 'height':29, 'attrs': '', 'meths': ''}
+{'type':'edge', 'id':'MainLogin_to_controller', 'source':'MainLogin', 'target':'controller', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'MainRegister_to_controller', 'source':'MainRegister', 'target':'controller', 'uml_edge_type': 'composition'}

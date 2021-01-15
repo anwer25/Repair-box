@@ -1,0 +1,35 @@
+# PynSource Version 1.2
+{'type':'meta', 'info1':'Lorem ipsum dolor sit amet, consectetur adipiscing elit is latin. Comments are saved.'}
+{'type':'umlshape', 'id':'MainRegister', 'x':783, 'y':603, 'width':130, 'height':209, 'attrs': 'main_programme|ok|password_problem|save|switch_window', 'meths': 'Buttons|__init__|createAccount|login|setupUi'}
+{'type':'umlshape', 'id':'Ui_login_Dialog', 'x':1154, 'y':30, 'width':160, 'height':269, 'attrs': 'img|login_Button|password|password_2|password_label|password_label_2|save|switch_window|text|username|username_label', 'meths': '__init__|retranslateUi|setupUi'}
+{'type':'umlshape', 'id':'Crypt', 'x':480, 'y':683, 'width':122, 'height':179, 'attrs': 'connection|emut|password|username', 'meths': '__init__|encrypt_password|encrypt_username|run'}
+{'type':'umlshape', 'id':'QMessageBox', 'x':883, 'y':362, 'width':120, 'height':29, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'QtWidgets.QDialog', 'x':1187, 'y':924, 'width':180, 'height':29, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'loading_MainWindow', 'x':3, 'y':378, 'width':206, 'height':779, 'attrs': 'ADDitems|add_item|addressEmailText|centralwidget|companyName|companyNameText|customerOrCompanyInformation|dateText|dateTimeEdit|delegation|delegationText|deviceBrands|deviceBrandsText|deviceModel|deviceModelText|deviceType|deviceTypeText|deviceinformation|emailAddress|governorate|governorateText|gridLayout|gridLayoutWidget|groupBox_4|homeAddress|homeAddressText|idNumber|idNumberText|label_13|label_14|label_15|menubar|menufile|paid|phoneNumber|phoneNumberText|prepaid|price|pushButton|statusbar|tab_2|textEdit|textEdit_2|userNameAndLastName|userNameText', 'meths': '__inti__|retranslateUi|setupUi'}
+{'type':'umlshape', 'id':'QMainWindow', 'x':2, 'y':-1, 'width':120, 'height':29, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'actions', 'x':658, 'y':930, 'width':80, 'height':79, 'attrs': '', 'meths': '__init__|setupUi'}
+{'type':'umlshape', 'id':'MainLogin', 'x':877, 'y':9, 'width':101, 'height':239, 'attrs': 'connect|data|dbpassword|dbusername|error|switch_window|worker', 'meths': 'Buttons|__init__|login|setupUi|signal'}
+{'type':'umlshape', 'id':'Dcrypt', 'x':708, 'y':224, 'width':129, 'height':194, 'attrs': 'dbpassword|dbusername|password|state|username', 'meths': 'Dencrypt_password|Dencrypt_username|__init__|run'}
+{'type':'umlshape', 'id':'sql.connect', 'x':696, 'y':61, 'width':120, 'height':29, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'QThread', 'x':191, 'y':-1, 'width':80, 'height':29, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'repairBoxDb', 'x':520, 'y':-2, 'width':129, 'height':134, 'attrs': 'connection', 'meths': '__init__|addValueToTables|createTables|create_connection'}
+{'type':'umlshape', 'id':'object', 'x':376, 'y':23, 'width':70, 'height':29, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'sqlite3.connect', 'x':437, 'y':393, 'width':160, 'height':29, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'controller', 'x':1081, 'y':497, 'width':136, 'height':224, 'attrs': 'login|loginss|loginsss|mWindow|register|ui', 'meths': '__init__|show_login|show_main|show_main_register|show_register'}
+{'type':'edge', 'id':'MainRegister_to_Ui_login_Dialog', 'source':'MainRegister', 'target':'Ui_login_Dialog', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Crypt_to_MainRegister', 'source':'Crypt', 'target':'MainRegister', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'QMessageBox_to_MainRegister', 'source':'QMessageBox', 'target':'MainRegister', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'Ui_login_Dialog_to_QtWidgets.QDialog', 'source':'Ui_login_Dialog', 'target':'QtWidgets.QDialog', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Ui_MainWindow_to_QMainWindow', 'source':'loading_MainWindow', 'target':'QMainWindow', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'actions_to_Ui_MainWindow', 'source':'actions', 'target':'loading_MainWindow', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'MainLogin_to_Ui_login_Dialog', 'source':'MainLogin', 'target':'Ui_login_Dialog', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Dcrypt_to_MainLogin', 'source':'Dcrypt', 'target':'MainLogin', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'QMessageBox_to_MainLogin', 'source':'QMessageBox', 'target':'MainLogin', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'sql.connect_to_MainLogin', 'source':'sql.connect', 'target':'MainLogin', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'Dcrypt_to_QThread', 'source':'Dcrypt', 'target':'QThread', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'repairBoxDb_to_object', 'source':'repairBoxDb', 'target':'object', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'sql.connect_to_repairBoxDb', 'source':'sql.connect', 'target':'repairBoxDb', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'Crypt_to_QThread', 'source':'Crypt', 'target':'QThread', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'sqlite3.connect_to_Crypt', 'source':'sqlite3.connect', 'target':'Crypt', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'MainRegister_to_controller', 'source':'MainRegister', 'target':'controller', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'MainLogin_to_controller', 'source':'MainLogin', 'target':'controller', 'uml_edge_type': 'composition'}
