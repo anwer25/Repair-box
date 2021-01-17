@@ -197,6 +197,8 @@ class settingsMain(QWidget, Ui_settings):
         self.___settings.setValue('LOGO_WIDTH', self.logoWidth.value())
         self.___settings.setValue('LOGO_HEIGHT', self.logoHeight.value())
         self.___settings.setValue('SAVE_WORD_FILE_PLACE', self.savePlace.text())
+        # second tab
+
         self.___settings.sync()
         self.close()
 
