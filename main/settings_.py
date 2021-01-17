@@ -197,8 +197,28 @@ class settingsMain(QWidget, Ui_settings):
         self.___settings.setValue('LOGO_WIDTH', self.logoWidth.value())
         self.___settings.setValue('LOGO_HEIGHT', self.logoHeight.value())
         self.___settings.setValue('SAVE_WORD_FILE_PLACE', self.savePlace.text())
-        # second tab
-
+        # second tab company
+        self.___settings.setValue('DOC_TEMPLATE', self.templatePlace.text())
+        self.___settings.setValue('LOGO_KEY', self.logoCode.text())
+        self.___settings.setValue('COMPANY_ADDRESS_KEY', self.companyAdresseCode.text())
+        self.___settings.setValue('COMPANY_PHONE_KEY', self.companyPhoneNumberCode.text())
+        self.___settings.setValue('COMPANY_FAX_KEY', self.companyFaxCode.text())
+        self.___settings.setValue('COMPANY_EMAIL_KEY', self.companyEmailCode.text())
+        self.___settings.setValue('COMPANY_WEB_SITE_KEY', self.companyWebSiteCode.text())
+        self.___settings.setValue('COMPANY_NAME_KEY', self.companyNameCode.text())
+        # client data
+        self.___settings.setValue('ID_KEY', self.deviceREF.text())
+        self.___settings.setValue('DATE_KEY', self.dateCode.text())
+        self.___settings.setValue('CLIENT_NAME_KEY', self.clientNameCode.text())
+        self.___settings.setValue('CLIENT_NUMBER_KEY', self.clientPhoneNumberCode.text())
+        self.___settings.setValue('DEVICE_TYPE_KEY', self.deviceTypeCode.text())
+        self.___settings.setValue('DEVICE_BRAND_KEY', self.deviceBrandCode.text())
+        self.___settings.setValue('DEVICE_MODEL_KEY', self.deviceModelCode.text())
+        self.___settings.setValue('PRICE_KEY', self.priceCode.text())
+        self.___settings.setValue('PRE_PAID_KEY', self.prePaidCode.text())
+        self.___settings.setValue('ACCESSORIES_KEY', self.accessoriseCode.text())
+        self.___settings.setValue('CLIENT_COMPANY_PLACE', self.clientNameCode.text())
+        self.___settings.setValue('QR_KEY', self.QRCode.text())
         self.___settings.sync()
         self.close()
 

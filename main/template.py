@@ -51,7 +51,7 @@ class templateEngine:
         idPlace = self.___settings.value('ID_KEY', 'ID', type=str)
         datePlace = self.___settings.value('DATE_KEY', 'Date', type=str)
         clientNamePlace = self.___settings.value('CLIENT_NAME_KEY', 'clientName', type=str)
-        clientNumberPlace = self.___settings.value('CLIENT_KEY', 'clientNumber', type=str)
+        clientNumberPlace = self.___settings.value('CLIENT_NUMBER_KEY', 'clientNumber', type=str)
         deviceTypePlace = self.___settings.value('DEVICE_TYPE_KEY', 'deviceType', type=str)
         deviceBrandPlace = self.___settings.value('DEVICE_BRAND_KEY', 'deviceBrand', type=str)
         deviceModelPlace = self.___settings.value('DEVICE_MODEL_KEY', 'deviceModel', type=str)
