@@ -75,6 +75,8 @@ class settingsMain(QWidget, Ui_settings):
             self.updatetimercloud.setEnabled(False)
             self.filedisplayplacecloud.setEnabled(False)
 
+
+
     def Buttons(self):
         self.openfile_realtimeconf.clicked.connect(self.open_realtime_conf)
         self.openconffilelocation_cloud_firestore.clicked.connect(self.cloud_firebase_conf)
@@ -172,6 +174,14 @@ class settingsMain(QWidget, Ui_settings):
         """
         savePlace = QFileDialog.getExistingDirectory(caption='L\'emplacement du Fichier')
         self.savePlace.setText(str(savePlace))
+
+    def openTemplate(self) -> None:
+        """
+        :rtype: None
+        :return: None
+        """
+        template = QFileDialog.getOpenFileName(caption='L\'emplacement du modele')
+        self.templatePlace.setText(str(template))
 
     def saver(self):
         if self.realtimeractivator.isChecked() and self.filedisplayplacerealtime.text() != '' and self.urldatabaseplace.text() != '' \

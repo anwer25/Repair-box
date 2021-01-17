@@ -502,4 +502,4 @@ class Ui_settings(object):
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.printModel), _translate("settings", "Modèle d\'impression"))
         self.cancelbutton.setText(_translate("settings", "Annule"))
         self.savebutton.setText(_translate("settings", "Enregistrer"))
-import source_rc
+from qrc_sources import source
