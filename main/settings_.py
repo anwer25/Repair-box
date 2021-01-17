@@ -75,6 +75,12 @@ class settingsMain(QWidget, Ui_settings):
             self.updatetimercloud.setEnabled(False)
             self.filedisplayplacecloud.setEnabled(False)
 
+        self.logoPlace.setText(self.___settings.value('LOGO_IMAGE', '', type=str))
+        self.logoWidth.setValue(self.___settings.value('LOGO_WIDTH', 1.38, type=float))
+        self.logoHeight.setValue(self.___settings.value('LOGO_HEIGHT', 1.23, type=float))
+        self.logoCode.setText(self.___settings.value('LOGO_KEY', 'LOGO', type=str))
+        self.logoUnite.setCurrentText(self.___settings.value('LOGO_IMAGE_MEASURING_UNIT', 'Inches', type=str))
+
 
 
     def Buttons(self):
@@ -88,6 +94,8 @@ class settingsMain(QWidget, Ui_settings):
         self.cancelbutton.clicked.connect(self.exit)
         self.openLogo.clicked.connect(self.openLogoEngine)
         self.openSavePlace.clicked.connect(self.openSavePlaceEngine)
+        self.openTemplate.clicked.connect(self.openTemplateEngine)
+
 
     def realtime(self, state):
         self.___settings.setValue('REAL_TIME_ENABLE', self.realtimeractivator.isChecked())
@@ -175,13 +183,14 @@ class settingsMain(QWidget, Ui_settings):
         savePlace = QFileDialog.getExistingDirectory(caption='L\'emplacement du Fichier')
         self.savePlace.setText(str(savePlace))
 
-    def openTemplate(self) -> None:
+    def openTemplateEngine(self) -> None:
         """
         :rtype: None
         :return: None
         """
-        template = QFileDialog.getOpenFileName(caption='L\'emplacement du modele')
-        self.templatePlace.setText(str(template))
+        template = QFileDialog.getOpenFileName(caption='L\'Ouvrir Model',
+                                               filter='Word Documents (*.docm *.docx *.dot *.dotx)')
+        self.templatePlace.setText(str(template)[1:-49])
 
     def saver(self):
         if self.realtimeractivator.isChecked() and self.filedisplayplacerealtime.text() != '' and self.urldatabaseplace.text() != '' \
