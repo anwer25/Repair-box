@@ -49,6 +49,7 @@ class settingsMain(QWidget, Ui_settings):
             self.openconffilelocation_cloud_firestore.setEnabled(True)
             self.updatetime_cloud.setEnabled(True)
             self.filedisplayplacerealtime.setEnabled(True)
+
         else:
             self.openfile_realtimeconf.setEnabled(False)
             self.urldatabaseplace.setEnabled(False)
@@ -68,6 +69,7 @@ class settingsMain(QWidget, Ui_settings):
             self.updatetime_cloud.setEnabled(True)
             self.updatetimercloud.setEnabled(True)
             self.filedisplayplacecloud.setEnabled(True)
+
         else:
             self.openconffilelocation_cloud_firestore.setEnabled(False)
             self.conffilelab.setEnabled(False)
@@ -75,27 +77,44 @@ class settingsMain(QWidget, Ui_settings):
             self.updatetimercloud.setEnabled(False)
             self.filedisplayplacecloud.setEnabled(False)
 
-        self.logoPlace.setText(self.___settings.value('LOGO_IMAGE', '', type=str))
         self.logoWidth.setValue(self.___settings.value('LOGO_WIDTH', 1.38, type=float))
         self.logoHeight.setValue(self.___settings.value('LOGO_HEIGHT', 1.23, type=float))
         self.logoCode.setText(self.___settings.value('LOGO_KEY', 'LOGO', type=str))
         self.logoUnite.setCurrentText(self.___settings.value('LOGO_IMAGE_MEASURING_UNIT', 'Inches', type=str))
 
+        self.siteWeb.setText(self.___settings.value('COMPANY_SITE', 'www.example.com', type=str))
 
+        self.companyName.setText(self.___settings.value('COMPANY_NAME__KEY', 'test', type=str))
+        self.companyAdresse.setText(self.___settings.value('COMPANY_ADDRESS', 'address test', type=str))
+        self.phoneNumber.setText(self.___settings.value('COMPANY_PHONE', '87987897', str))
+        self.companyFax.setText(self.___settings.value('COMPANY_FAX', '877878787', str))
+        self.companyEmail.setText(self.___settings.value('COMPANY_EMAIL', 'example@example.com', str))
+
+        self.qrWidth.setValue(self.___settings.value('QR_IMAGE_WIDTH', 1.38, float))
+        self.qrHeight.setValue(self.___settings.value('QR_IMAGE_HEIGHT', 1.23, float))
+        self.qrUnit.setCurrentText(self.___settings.value('QR_IMAGE_MEASURING_UNIT', 'Inches', str))
+
+        self.savePlace.setText(self.___settings.value('SAVE_WORD_FILE_PLACE', 'main\\data\\clientsWordFile\\'))
+
+        # data place codes
+
+        self.logoPlace.setText(self.___settings.value('LOGO_IMAGE', '', type=str))
 
     def Buttons(self):
         self.openfile_realtimeconf.clicked.connect(self.open_realtime_conf)
         self.openconffilelocation_cloud_firestore.clicked.connect(self.cloud_firebase_conf)
         self.savebutton.clicked.connect(self.saver)
+
         self.cancelbutton.clicked.connect(self.exit)
         self.realtimeractivator.stateChanged.connect(self.realtime)
         self.cloudActivator.stateChanged.connect(self.cloudUi)
+
         self.openDataBase.clicked.connect(self.dataBaseFile)
         self.cancelbutton.clicked.connect(self.exit)
         self.openLogo.clicked.connect(self.openLogoEngine)
+
         self.openSavePlace.clicked.connect(self.openSavePlaceEngine)
         self.openTemplate.clicked.connect(self.openTemplateEngine)
-
 
     def realtime(self, state):
         self.___settings.setValue('REAL_TIME_ENABLE', self.realtimeractivator.isChecked())
@@ -103,19 +122,24 @@ class settingsMain(QWidget, Ui_settings):
             self.openfile_realtimeconf.setEnabled(True)
             self.filelocationlabel.setEnabled(True)
             self.urllabe.setEnabled(True)
+
             self.refrencelabel.setEnabled(True)
             self.updatetimerlabel.setEnabled(True)
             self.urldatabaseplace.setEnabled(True)
+
             self.refrence.setEnabled(True)
             self.updatetimer.setEnabled(True)
             self.filedisplayplacerealtime.setEnabled(True)
+
         else:
             self.openfile_realtimeconf.setEnabled(False)
             self.urldatabaseplace.setEnabled(False)
             self.refrence.setEnabled(False)
+
             self.updatetimer.setEnabled(False)
             self.filelocationlabel.setEnabled(False)
             self.urllabe.setEnabled(False)
+
             self.refrencelabel.setEnabled(False)
             self.updatetimerlabel.setEnabled(False)
             self.filedisplayplacerealtime.setEnabled(False)
@@ -126,12 +150,15 @@ class settingsMain(QWidget, Ui_settings):
             self.openconffilelocation_cloud_firestore.setEnabled(True)
             self.conffilelab.setEnabled(True)
             self.updatetime_cloud.setEnabled(True)
+
             self.updatetimercloud.setEnabled(True)
             self.filedisplayplacecloud.setEnabled(True)
+
         else:
             self.openconffilelocation_cloud_firestore.setEnabled(False)
             self.conffilelab.setEnabled(False)
             self.updatetime_cloud.setEnabled(False)
+
             self.updatetimercloud.setEnabled(False)
             self.filedisplayplacecloud.setEnabled(False)
 
@@ -198,46 +225,58 @@ class settingsMain(QWidget, Ui_settings):
             self.___settings.setValue('REAL_TIME_CONF_FILE', self.filedisplayplacerealtime.text())
             self.___settings.setValue('REAL_TIME_URL_DATA', self.urldatabaseplace.text())
             self.___settings.setValue('REAL_TIME_REFERENCE', self.refrence.text())
+
             self.___settings.setValue('REAL_TIMER_UPDATER_T', self.updatetimer.currentText())
 
         if self.cloudActivator.isChecked() and self.filedisplayplacecloud.text() != '':
             self.___settings.setValue('CLOUD_CONF_FILE', self.filedisplayplacecloud.text())
             self.___settings.setValue('CLOUD_SYNC_TIME', self.updatetimercloud.currentText())
         self.___settings.setValue('DATA_BASE_FILE', self.dataBaseLocaition.text())
+
         self.___settings.setValue('TABEL_NAME', self.dataBaseTabelName.text())
         self.___setting.setValue('LOGO_IMAGE', self.logoPlace.text())
         self.___settings.setValue('SAVE_WORD_FILE_PLACE', self.savePlace.text())
-        self.___settings.setValue('COMPANY_NAME', self.siteWeb.text())
+
+        self.___settings.setValue('COMPANY_SITE', self.siteWeb.text())
         self.___settings.setValue('COMPANY_NAME__KEY', self.companyName.text())
         self.___settings.setValue('COMPANY_ADDRESS', self.companyAdresse.text())
+
         self.___settings.setValue('COMPANY_PHONE', self.phoneNumber.text())
         self.___settings.setValue('COMPANY_FAX', self.companyFax.text())
         self.___settings.setValue('COMPANY_EMAIL', self.companyEmail.text())
+
         self.___settings.setValue('LOGO_WIDTH', self.logoWidth.value())
         self.___settings.setValue('LOGO_HEIGHT', self.logoHeight.value())
         self.___settings.setValue('SAVE_WORD_FILE_PLACE', self.savePlace.text())
+
         # second tab company
         self.___settings.setValue('DOC_TEMPLATE', self.templatePlace.text())
         self.___settings.setValue('LOGO_KEY', self.logoCode.text())
         self.___settings.setValue('COMPANY_ADDRESS_KEY', self.companyAdresseCode.text())
+
         self.___settings.setValue('COMPANY_PHONE_KEY', self.companyPhoneNumberCode.text())
         self.___settings.setValue('COMPANY_FAX_KEY', self.companyFaxCode.text())
         self.___settings.setValue('COMPANY_EMAIL_KEY', self.companyEmailCode.text())
+
         self.___settings.setValue('COMPANY_WEB_SITE_KEY', self.companyWebSiteCode.text())
         self.___settings.setValue('COMPANY_NAME_KEY', self.companyNameCode.text())
         # client data
         self.___settings.setValue('ID_KEY', self.deviceREF.text())
         self.___settings.setValue('DATE_KEY', self.dateCode.text())
         self.___settings.setValue('CLIENT_NAME_KEY', self.clientNameCode.text())
+
         self.___settings.setValue('CLIENT_NUMBER_KEY', self.clientPhoneNumberCode.text())
         self.___settings.setValue('DEVICE_TYPE_KEY', self.deviceTypeCode.text())
         self.___settings.setValue('DEVICE_BRAND_KEY', self.deviceBrandCode.text())
+
         self.___settings.setValue('DEVICE_MODEL_KEY', self.deviceModelCode.text())
         self.___settings.setValue('PRICE_KEY', self.priceCode.text())
         self.___settings.setValue('PRE_PAID_KEY', self.prePaidCode.text())
+
         self.___settings.setValue('ACCESSORIES_KEY', self.accessoriseCode.text())
         self.___settings.setValue('CLIENT_COMPANY_PLACE', self.clientNameCode.text())
         self.___settings.setValue('QR_KEY', self.QRCode.text())
+
         self.___settings.sync()
         self.close()
 
